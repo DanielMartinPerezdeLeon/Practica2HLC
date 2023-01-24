@@ -1,8 +1,9 @@
 
+/* CABECERA */
+
 .cabecera{
     background-color: #2196F3;   
 }
-
 
 .cabecera .listado_cabecera{
     
@@ -12,24 +13,35 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+    transition: background-color 0.2s ease-in-out;
     
  
 }
 
 .cabecera .listado_cabecera a{
+    background-color: #2196F3;
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
-    margin: 0 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding:5px;
 }
 
 .cabecera .listado_cabecera a:hover{
     color: #9575cd;
+    background-color: #1E88E5;
 }
+
+
+/* CUERPO */
 
 body{
     background: linear-gradient(to right, #8892c6, #5564eb, #5f3fd5);
 }
+
+
+/* TEXTOS */
 
 h1{
     text-align: center;
@@ -43,6 +55,9 @@ p{
     text-align: center;
 }
 
+
+/* SECCIONES */ 
+
 section{
     margin-left: auto;
     margin-right: auto;
@@ -50,18 +65,87 @@ section{
     padding: 20px;  
 }
 
+
+/* FORMULARIOS */
+
 form{
-    width: 50%; /* Set the width of the form */
+    width: 40%; /* Set the width of the form */
     margin: 0 auto; /* Center the form horizontally */
     text-align: center; /* Center the text inside the form */
+    
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: white;
 }
 
 form > * {
-    width: 50%; /* Set the width of the form */
     margin: 0 auto; /* Center the form horizontally */
     text-align: center; /* Center the text inside the form */
+    
 }
 
+
+.formu{
+    padding-top: 10px   ;
+    padding-bottom: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 5px;
+
+    width: 70%;
+
+    display: flex; /* enables flexbox layout */
+    justify-content: space-between; /* aligns elements horizontally, with space between them */
+}
+
+.formu:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+}
+
+.formu > input{
+    padding-right: 12%;
+    width: 100%;
+}
+
+.formu > textarea{
+    padding-right: 14%; 
+    height: 50px;
+    width: 100%;
+}
+
+.formu > label{
+    padding-left: 10%;
+    width: 100%;
+}
+
+
+.btnenviar {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.25em;
+    line-height: 1.5;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+    color: black;
+    background-color: #F9D423;
+
+    width: 50%;
+
+    margin-bottom: 5mm;
+
+    border-radius: 5px;
+}
+
+.btnenviar:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+
+/*FOOTER*/
 footer {
     position: absolute;
     bottom: 0;
@@ -70,61 +154,4 @@ footer {
     text-align: center; /* Center the text inside the form */
     background-color: #2196F3;
     color: white;
-}
-
-.form-group {
-    margin-bottom: 5px;
-}
-
-.form-control {
-    display: block;
-    width: 100%;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
-.form-control:focus {
-    color: #495057;
-    background-color: #fff;
-    border-color: #80bdff;
-    outline: 0;
-    box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
-}
-
-.btn {
-    display: inline-block;
-    font-weight: 400;
-    color: #212529;
-    text-align: center;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: transparent;
-    border: 1px solid transparent;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: .25rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
-.btn-primary {
-    color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
-}
-
-.btn-primary:hover {
-    color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
 }
