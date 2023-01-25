@@ -33,6 +33,11 @@
     background-color: #1E88E5;
 }
 
+.cabecera .listado_cabecera a:active{
+    color: #27033b;
+    background-color: #0c4a81;
+}
+
 
 /* CUERPO */
 
@@ -52,9 +57,14 @@ h2{
 }
 
 p{
-    text-align: center;
+    text-align: justify;
+  text-justify: inter-word;
+  width: 100%;
 }
 
+p.titulo{
+    text-align: center;
+}
 
 /* SECCIONES */ 
 
@@ -110,9 +120,10 @@ form > * {
 }
 
 .formu > textarea{
-    padding-right: 14%; 
+    padding-right: 12.5%; 
     height: 50px;
     width: 100%;
+    font-size: 0.7em;
 }
 
 .formu > label{
@@ -154,4 +165,8 @@ footer {
     text-align: center; /* Center the text inside the form */
     background-color: #2196F3;
     color: white;
+}
+
+footer >p{
+    text-align: center; /* Center the text inside the form */
 }
