@@ -180,3 +180,8 @@ canvas { background: #eee;
   margin-right: auto;
   width: 30%;
  }
+
+ .invalid {
+    border: 1px solid red;
+    background-color: #ffdddd;
+  }
